@@ -16,18 +16,35 @@
 	.calc {
 		background-color: #2c2b2b;
 
-		padding: 10px;
+		padding: 20px;
 		.textSection__numbers {
 			height: 10dvh;
-			background-color: white;
+			background-color: rgb(165, 148, 148);
 		}
 		.buttonSection {
+			padding: 10px 0px;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
-
+			justify-items: stretch;
+			grid-row-end: span 2;
+			gap: 5px;
 			button {
-				width: 40px;
-				height: 40px;
+				width: 60px;
+				height: 60px;
+				font-size: 1.1rem;
+				color: white;
+				border: 1px solid white;
+				background-color: #534545;
+				cursor: pointer;
+			}
+			button:hover {
+				transform: scale(1.05);
+			}
+			.result {
+				grid-column-start: 3;
+				grid-column-end: 5;
+
+				width: 125px;
 			}
 		}
 	}
